@@ -18,6 +18,9 @@ const port = process.env.PORT;
 app.use("/users", users);
 app.use("/login", login);
 app.use("/token", token);
+app.get("/", (req, res) => {
+  res.status(200).send("Server active");
+});
 
 app.listen(port, () =>
   console.log(`Authentication server listening on port ${port}`)
