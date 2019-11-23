@@ -5,7 +5,8 @@ dotenv.config();
 const URI = process.env.DB_URL;
 
 const pool = new Pool({
-  connectionString: URI
+  connectionString: URI,
+  ssl: true
 });
 
 pool.on("connect", () => {
