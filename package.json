@@ -1,7 +1,7 @@
 {
   "name": "auth-server",
   "version": "1.0.0",
-  "description": "The authorization server for a recipe web app",
+  "description": "A simple authorization server that can be used to create, store, and authorize users",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js"
